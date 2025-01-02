@@ -12,8 +12,8 @@ source "$HELPERS_DIR/tmux_utils.sh"
 
 main() {
 	reload_tmux_environment
-	"$SCRIPTS_DIR/install_plugins.sh" --tmux-echo >/dev/null 2>&1
+	"$SCRIPTS_DIR/install_plugins.sh" --tmux-echo
 	reload_tmux_environment
-	end_message
+	# end_message
 }
 main
